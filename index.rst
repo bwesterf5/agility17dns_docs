@@ -11,15 +11,26 @@
 
 The lab environment is pre-configured with basic system and networking settings.
 
-All Excercises will be completed from the Windows jumpbox.
+All lab excercises are to be completed from the Windows jumpbox.
 
-The IP address for the RDP jumpbox can be found in the Ravello training portal.
+Locate the IP address for the RDP jumpbox in the Ravello training portal.
 
 Devices used in the following excercises are:
 
-GTM.SITE1 10.1.10.13
+bigip1.site1 10.1.10.11
 
-GTM.SITE2 10.1.10.23
+bigip2.site2 10.1.10.12
+
+gtm1.site1 10.1.10.13
+
++===========================+============================+
+| bigip1.site1 = 10.1.10.11 | bigip1.site2 = 10.1.10.21  |
++---------------------------+----------------------------+
+| bigip2.site1 = 10.1.10.12 | bigip2.site2 = 10.1.10.22  |
++---------------------------+----------------------------+
+| gtm1.site1 = 10.1.10.13   | gtm1.site2 = 10.1.10.23    |
++---------------------------+----------------------------+
+
 
 
 .. figure:: ./media/image2.jpeg
@@ -46,9 +57,7 @@ jump box needed to proceed with the lab.  A student view:
    :width: 7.05000in
    :height: 2.96064in
 
-NOTE: All of the VMs should be in a STARTED state, if a VM is in any
-other state please let the Lab Instructors know or you can attempt to
-RESTART the VM yourself.
+NOTE: All of the VMs should be in a STARTED state.
 
 Select and Highlight then COPY the URL Link located under the DNS
 section
