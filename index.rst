@@ -13,7 +13,7 @@ The lab environment is pre-configured with basic system and networking settings.
 
 All Excercises will be completed from the Windows jumpbox.
 
-The IP address for the RDP jumpbox can be found in the training portal.
+The IP address for the RDP jumpbox can be found in the Ravello training portal.
 
 Devices used in the following excercises are:
 
@@ -80,7 +80,7 @@ Exercise 1.1 – Initial Setup
 ============================
 
 -  **Objective:** To start off the labs, you will run through some basic
-   configuration steps to get **GTM1 (10.128.1.246)** up and
+   configuration steps to get **GTM1.SITE1 (10.1.10.13)** up and
    operational. Networking and NTP are already configured. You will be
    configuring the following:
 
