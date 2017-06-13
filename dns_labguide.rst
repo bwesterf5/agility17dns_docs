@@ -1,6 +1,6 @@
 **BIG-IP DNS: Global Server Load Balancing**
 
-    Written for: TMOS® v12.0
+    Written for: TMOS® v13.0
 
 .. figure:: ./media/image1.jpg
    :alt: 
