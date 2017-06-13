@@ -1,4 +1,4 @@
-**BIG-IP DNS: Global Server Load Balancing**
+**F5 DNS Labs**
 
     Written for: TMOS® v13.0
 
@@ -9,15 +9,13 @@
 
     Last Updated: 3/17/2016
 
-DNS Lab – Getting Started
-
 The lab environment is pre-configured with basic system and networking settings.
 
-Students will connect to the Win7 Jumpbox as shown below via a URL Link
-from the Landing Page.
+All Excercises will be completed from the Windows jumpbox.
 
-Your F5 devices are accessible via HTTPS and SSH from the Win7 Jumpbox
-at:
+The IP address for the RDP jumpbox can be found in the training portal.
+
+Devices used in the following excercises are:
 
 GTM.SITE1 10.1.10.13
 
@@ -36,9 +34,7 @@ for the IP address)**
 Type in your username such as ***dns101\_student1***,
 ***dns101\_student2***, etc.. with a shared password of "**DnS101**"
 
-Select ‘View’ Under the Actions Column associated with the DNS101 lab.
-
- 
+Select ‘View’ Under the Actions Column associated with the lab.
 
 Once you are logged in, you will see the URL for your specific windows
 jump box needed to proceed with the lab.  A student view:
@@ -60,9 +56,9 @@ section
 Open up a Remote Desktop Client on your Laptop and Paste the DNS URL
 Link from the Ravello Login screen.
 
-Username: **Student**
+Username: **user**
 
-Password: **F5@GilitY!** //This is the same password for all Student
+Password: **Agility1** //This is the same password for all Student
 Logins
 
  
@@ -72,10 +68,10 @@ Logins
    :width: 4.37014in
    :height: 2.68472in
 
-**-**\ Use Mozilla Browser on the Jumpbox and login to **LTM
-(10.128.1.241)** & **GTM-EAST (10.128.1.246)**
+**-**\ Use Internet Explorer Browser on the Jumpbox and login to **GTM1.SITE1
+(10.1.10.13)** & **GTM1.SITE2 (10.1.10.23)**
 
--Login as = **admin/agility**
+-Login as = **admin/admin**
 
 BIG-IP DNS: Global Server Load Balancing
 ========================================
