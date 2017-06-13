@@ -17,6 +17,7 @@ from the Landing Page.
 All excercises will be compoleted from the Windows Jumpbox.
 
 GTM.SITE1 10.1.10.13
+
 GTM.SITE2 10.1.10.23
 
 .. figure:: ./media/image2.jpeg
