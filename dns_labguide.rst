@@ -10,25 +10,14 @@
 
 DNS Lab – Getting Started
 
-Your F5 has already been configured with the following:
-
--  Networking: VLANs, SelfIPs, Routing
-
--  DNS, NTP
-
-Students will connect to the Win7 Jumpbox as shown below via a URL Link
+The labs are pre-configured with basic system and network settings.
+Students will connect to a Win7 Jumpbox as shown below via a URL Link
 from the Landing Page.
 
-Your F5 devices are accessible via HTTPS and SSH from the Win7 Jumpbox
-at:
+All excercises will be compoleted from the Windows Jumpbox.
 
-GTM1 10.128.1.245 //Configuration for Lab Exercises 1.1 thru 2.3
-
-GTM2 10.128.1.246 //Configuration for Lab Exercise 3.1
-
-LTM-East 10.128.1.247 //Used for Lab Exercises 1.1 thru 3.1
-
-Lamp-West 10.0.0.10 //Used for Lab Exercises 1.1 thru 3.1
+GTM.SITE1 10.1.10.13
+GTM.SITE2 10.1.10.23
 
 .. figure:: ./media/image2.jpeg
    :alt: 
