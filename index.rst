@@ -64,7 +64,7 @@ Service IP Addresses:
 GSLB
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-– Initial Setup
+Initial Setup
 ============================
 
 -  **Objective:** To start off the labs, you will run through some basic
@@ -84,7 +84,7 @@ GSLB
 
 -  Estimated completion time: 25 minutes
 
-– Logging
+Logging
 ============================
 
 -  Configure DNS query and response logging. To do >
@@ -197,7 +197,7 @@ Create**
 |                         | Click Finished        |
 +-------------------------+-----------------------+
 
-- Data Centers
+Data Centers
 ============================
 
 -  In the GUI, navigate to: **DNS > GSLB > Data Centers > Data > Center
@@ -230,7 +230,7 @@ Create**
       :width: 5.48936in
       :height: 1.03219in
 
-– Servers
+Servers
 ============================
 
 By default, GTM is not self-aware. You will need to configure your BigIP
@@ -856,7 +856,7 @@ We will create a hostname to use as a Wide IP for Toplogy LB.
          :width: 5.59041in
          :height: 2.51932in
 
-Exercise 3.1 – Creating a Synchronization Group
+Synchronization Group
 ===============================================
 
 -  In this use-case, you will create a sync group to be used between
