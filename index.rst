@@ -1,3 +1,12 @@
+.. toctree::
+   :maxdepth: 2
+
+   intro
+   strings
+   datatypes
+   numeric
+
+
 **F5 DNS Labs**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
