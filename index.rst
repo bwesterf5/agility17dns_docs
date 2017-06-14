@@ -39,10 +39,11 @@ The lab consists of two datacenters and a branch office. A Microsoft Active Dire
 
 The lab environment is pre-configured with basic system and networking settings.
 
-**-**\ Use Internet Explorer Browser on the Jumpbox and login to **GTM1.SITE1
-(10.1.10.13)** & **GTM1.SITE2 (10.1.10.23)**
+Use Internet Explorer Browser on the Jumpbox
 
--Login as = **admin/admin**
+GUI username = **admin/admin**
+
+CLI username = **root/default**
 
 Management IP Addresses:
 
