@@ -16,7 +16,7 @@ All lab excercises are to be completed from the Windows jumpbox.
 Locate the IP address for the Windows jumpbox in the Ravello training portal.
 
 +---------------------------+----------------------------+
-| gtm1.site1 = 10.1.10.13   | gtm1.site2 = 10.1.10.23    |
+| **Site 1**                | **Site 2**                 |
 +===========================+============================+
 | bigip1.site1 = 10.1.10.11 | bigip1.site2 = 10.1.10.21  |
 +---------------------------+----------------------------+
