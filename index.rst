@@ -29,11 +29,11 @@ Password: **Agility1**
 Network Topology
 ============================
 
-The lab consists of two datacenters and a branch office. A Microsoft Active Directory Domain "EXAMPLE" runs in the branch office along with a Windows-7 "jumpbox/management" for remote desktop. Each "site" or "datacenter" consists of one standalone GTM, an HA pair of fully licensed BIG-IP's, as well as distributed application servers running containers of Apache,MySQL,PHP. 
+The lab consists of two datacenters and a branch office. A Microsoft Active Directory Domain "EXAMPLE" runs in the branch office along with a Windows-7 "jumpbox" for remote desktop. Each "site" or "datacenter" consists of one standalone GTM, an HA pair of fully licensed BIG-IP's, as well as distributed application servers running containers of Apache,MySQL,PHP. 
 
 The lab environment is pre-configured with basic system and networking settings.
 
-Use Internet Explorer Browser on the Jumpbox
+Use Internet Explorer Browser on the jumpbox to log in via the GUI, or use Putty for SSH to get a shell.
 
 GUI username = **admin/admin**
 
