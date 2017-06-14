@@ -13,19 +13,13 @@ The lab environment is pre-configured with basic system and networking settings.
 
 All lab excercises are to be completed from the Windows jumpbox.
 
-Locate the IP address for the RDP jumpbox in the Ravello training portal.
+Locate the IP address for the Windows jumpbox in the Ravello training portal.
 
-Devices used in the following excercises are:
-
-bigip1.site1 10.1.10.11
-
-bigip2.site2 10.1.10.12
-
-gtm1.site1 10.1.10.13
-
++---------------------------+----------------------------+
+| gtm1.site1 = 10.1.10.13   | gtm1.site2 = 10.1.10.23    |
 +===========================+============================+
 | bigip1.site1 = 10.1.10.11 | bigip1.site2 = 10.1.10.21  |
-+====================+===================================+
++---------------------------+----------------------------+
 | bigip2.site1 = 10.1.10.12 | bigip2.site2 = 10.1.10.22  |
 +---------------------------+----------------------------+
 | gtm1.site1 = 10.1.10.13   | gtm1.site2 = 10.1.10.23    |
