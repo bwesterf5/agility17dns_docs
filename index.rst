@@ -84,10 +84,10 @@ Exercise 1.1 – Initial Setup
 
 -  Estimated completion time: 25 minutes
 
-Exercise 1.2 – Configuring DNS Logging
+Exercise 1.2 – Logging
 ============================
 
--  You are going to configure DNS query and response logging. To do >
+-  Configure DNS query and response logging. To do >
    this, you must tell GTM where to send logs to (a log publisher) > and
    what specifically to log (DNS logging profile).
 
@@ -129,7 +129,7 @@ Exercise 1.2 – Configuring DNS Logging
 
 -  Your new dns-logging profile should now have all options enabled.
 
-Exercise 1.3 – Create a DNS Profile
+Exercise 1.3 – DNS Profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  A DNS profile tells the DNS Listener how to process DNS traffic. >
@@ -155,10 +155,10 @@ Exercise 1.3 – Create a DNS Profile
 |                                 | Click Finished   |
 +---------------------------------+------------------+
 
-TASK 3 – Create a Listener
+TASK 3 – Listeners
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We are going to create UDP/TCP external Listeners. You will use this IP
+Create UDP/TCP external Listeners. You will use this IP
 as a target address when querying GTM.
 
 In the GUI, navigate to: **DNS > Delivery > Listeners > Listener List:
@@ -197,7 +197,7 @@ Create**
 |                         | Click Finished        |
 +-------------------------+-----------------------+
 
-TASK 4 – Create Data Centers
+TASK 4 – Data Centers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  In the GUI, navigate to: **DNS > GSLB > Data Centers > Data > Center
@@ -230,7 +230,7 @@ TASK 4 – Create Data Centers
       :width: 5.48936in
       :height: 1.03219in
 
-TASK 5 – Create GTM Server Object
+TASK 5 – Servers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 By default, GTM is not self-aware. You will need to configure your BigIP
@@ -269,7 +269,7 @@ as a server object.
    | |image0|
    | What is the status of the East Data Center object now?
 
-TASK 6 – Create LTM Server Object
+TASK 6 – LTM HA Pairs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Students will be using an LTM object to serve as the East-LTM. You will
@@ -332,7 +332,7 @@ relationship.
    | > **tail -100 /var/log/gtm
      > **
 
-TASK 7 – Create Generic Server Object
+TASK 7 – Generic Host
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 GTM can handle virtual servers that do not reside on a BigIP. The most
@@ -360,7 +360,7 @@ of Generic Host.
       :width: 5.59245in
       :height: 1.24332in
 
-TASK 8 – Create LTM Virtual Servers
+TASK 8 – Virtual Servers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Finally, we need to create another virtual server on our **LTM–East**
