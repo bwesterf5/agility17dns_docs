@@ -61,6 +61,9 @@ Service IP Addresses:
 | vpn.example.com = 203.0.113.10 | vpn.example.com = 10.1.10.21    |
 +-------------------------------+----------------------------------+
 
+GSLB
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Exercise 1.1 – Initial Setup
 ============================
 
@@ -81,8 +84,8 @@ Exercise 1.1 – Initial Setup
 
 -  Estimated completion time: 25 minutes
 
-TASK 1 – Configuring DNS Logging
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Exercise 1.2 – Configuring DNS Logging
+============================
 
 -  You are going to configure DNS query and response logging. To do >
    this, you must tell GTM where to send logs to (a log publisher) > and
@@ -126,7 +129,7 @@ TASK 1 – Configuring DNS Logging
 
 -  Your new dns-logging profile should now have all options enabled.
 
-TASK 2 – Create a DNS Profile
+Exercise 1.3 – Create a DNS Profile
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  A DNS profile tells the DNS Listener how to process DNS traffic. >
