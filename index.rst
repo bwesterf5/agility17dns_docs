@@ -1,11 +1,10 @@
 **F5 DNS Labs**
 
-**TODO** - insert screenshots of Ravello Training Portal login to get IP address
-
 Locate the IP address for the Windows jumpbox in the Ravello training portal.
 
-All lab excercises are to be completed from the Windows jumpbox.
+All lab excercises are to be completed from a Windows "jumpbox" hosted in public cloud
 
+**TODO Update the screenshot with annotations
 
 .. figure:: ./media/image3.png
    :alt: 
@@ -14,26 +13,17 @@ All lab excercises are to be completed from the Windows jumpbox.
 
 NOTE: All of the VMs should be in a STARTED state.
 
-Select and Highlight then COPY the URL Link located under the DNS
-section
-
-Open up a Remote Desktop Client on your Laptop and Paste the DNS URL
-Link from the Ravello Login screen.
-
 Username: **user**
 
 Password: **Agility1**
-
-Once you are logged in, you will see the URL for your specific windows
-jump box needed to proceed with the lab.  A student view:
 
 .. figure:: ./media/image4.jpeg
    :alt: 
    :width: 4.37014in
    :height: 2.68472in
 
-
-- Lab Topology
+Lab Topology
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The lab consists of two datacenters and a branch office. A Microsoft Active Directory Domain "EXAMPLE" runs in the branch office along with a Windows-7 "jumpbox/management" for remote desktop. Each "site" or "datacenter" consists of one standalone GTM, an HA pair of fully licensed BIG-IP's, as well as distributed application servers running containers of Apache,MySQL,PHP. 
 
@@ -57,8 +47,6 @@ Management IP Addresses:
 | gtm1.site1 = 10.1.10.13   | gtm1.site2 = 10.1.10.23    |
 +---------------------------+----------------------------+
 
-BIG-IP DNS: Global Server Load Balancing
-========================================
 
 Exercise 1.1 – Initial Setup
 ============================
