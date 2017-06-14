@@ -22,26 +22,27 @@ Link from the Ravello Login screen.
 
 Username: **user**
 
-Password: **Agility1** //This is the same password for all Student
-Logins
+Password: **Agility1**
 
- 
+Once you are logged in, you will see the URL for your specific windows
+jump box needed to proceed with the lab.  A student view:
 
 .. figure:: ./media/image4.jpeg
    :alt: 
    :width: 4.37014in
    :height: 2.68472in
 
-**-**\ Use Internet Explorer Browser on the Jumpbox and login to **GTM1.SITE1
-(10.1.10.13)** & **GTM1.SITE2 (10.1.10.23)**
-
--Login as = **admin/admin**
 
 - Lab Topology
 
 The lab consists of two datacenters and a branch office. A Microsoft Active Directory Domain "EXAMPLE" runs in the branch office along with a Windows-7 "jumpbox/management" for remote desktop. Each "site" or "datacenter" consists of one standalone GTM, an HA pair of fully licensed BIG-IP's, as well as distributed application servers running containers of Apache,MySQL,PHP. 
 
 The lab environment is pre-configured with basic system and networking settings.
+
+**-**\ Use Internet Explorer Browser on the Jumpbox and login to **GTM1.SITE1
+(10.1.10.13)** & **GTM1.SITE2 (10.1.10.23)**
+
+-Login as = **admin/admin**
 
 Management IP Addresses:
 
@@ -54,18 +55,6 @@ Management IP Addresses:
 +---------------------------+----------------------------+
 | gtm1.site1 = 10.1.10.13   | gtm1.site2 = 10.1.10.23    |
 +---------------------------+----------------------------+
-
-
-Type in your username such as ***dns101\_student1***,
-***dns101\_student2***, etc.. with a shared password of "**DnS101**"
-
-Select ‘View’ Under the Actions Column associated with the lab.
-
-Once you are logged in, you will see the URL for your specific windows
-jump box needed to proceed with the lab.  A student view:
-
- 
-
 
 BIG-IP DNS: Global Server Load Balancing
 ========================================
