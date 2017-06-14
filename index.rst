@@ -1,19 +1,18 @@
 **F5 DNS Labs**
 
-    Written for: TMOS® v13.0
+**TODO** - insert screenshots of Ravello Training Portal login to get IP address
 
-.. figure:: ./media/image1.jpg
-   :alt: 
-   :width: 0.87153in
-   :height: 0.76389in
-
-    Last Updated: 3/17/2016
-
-The lab environment is pre-configured with basic system and networking settings.
+Locate the IP address for the Windows jumpbox in the Ravello training portal.
 
 All lab excercises are to be completed from the Windows jumpbox.
 
-Locate the IP address for the Windows jumpbox in the Ravello training portal.
+- Lab Topology
+
+The lab consists of two datacenters and a branch office. A Microsoft Active Directory Domain "EXAMPLE" runs in the branch office along with a Windows-7 "jumpbox/management" for remote desktop. Each "site" or "datacenter" consists of one standalone GTM, an HA pair of fully licensed BIG-IP's, as well as distributed application servers running containers of Apache,MySQL,PHP. 
+
+The lab environment is pre-configured with basic system and networking settings.
+
+Management IP Addresses:
 
 +---------------------------+----------------------------+
 | **Site 1**                | **Site 2**                 |
@@ -25,16 +24,6 @@ Locate the IP address for the Windows jumpbox in the Ravello training portal.
 | gtm1.site1 = 10.1.10.13   | gtm1.site2 = 10.1.10.23    |
 +---------------------------+----------------------------+
 
-
-
-.. figure:: ./media/image2.jpeg
-   :alt: 
-   :width: 7.05000in
-   :height: 3.69299in
-
-To access your Ravello Lab Environment, from either Chrome or Mozilla
-Browser connect to the Ravello Training Portal \ **(Ask an instructor
-for the IP address)**
 
 Type in your username such as ***dns101\_student1***,
 ***dns101\_student2***, etc.. with a shared password of "**DnS101**"
