@@ -4,9 +4,11 @@
 Lab Access
 ============================
 
-Locate the IP address for the Windows jumpbox in the Ravello training portal.
+Log in to the Ravello training portal at https://ravello.example.com
 
-All lab excercises are to be completed from a Windows "jumpbox" hosted in public cloud
+Find the IP address for the Windows jumpbox found in the in the Ravello training portal.
+
+All lab excercises are to be completed from the Windows "jumpbox".
 
 **TODO Update the screenshot with annotations
 
