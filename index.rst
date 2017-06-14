@@ -26,7 +26,7 @@ Password: **Agility1**
    :width: 4.37014in
    :height: 2.68472in
 
-Lab Topology
+Network Topology
 ============================
 
 The lab consists of two datacenters and a branch office. A Microsoft Active Directory Domain "EXAMPLE" runs in the branch office along with a Windows-7 "jumpbox/management" for remote desktop. Each "site" or "datacenter" consists of one standalone GTM, an HA pair of fully licensed BIG-IP's, as well as distributed application servers running containers of Apache,MySQL,PHP. 
@@ -64,7 +64,7 @@ Service IP Addresses:
 GSLB
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Exercise 1.1 – Initial Setup
+– Initial Setup
 ============================
 
 -  **Objective:** To start off the labs, you will run through some basic
@@ -84,7 +84,7 @@ Exercise 1.1 – Initial Setup
 
 -  Estimated completion time: 25 minutes
 
-Exercise 1.2 – Logging
+– Logging
 ============================
 
 -  Configure DNS query and response logging. To do >
@@ -129,8 +129,8 @@ Exercise 1.2 – Logging
 
 -  Your new dns-logging profile should now have all options enabled.
 
-Exercise 1.3 – DNS Profile
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNS Profile
+============================
 
 -  A DNS profile tells the DNS Listener how to process DNS traffic. >
    We’re going to make some basic tweaks.
@@ -155,8 +155,8 @@ Exercise 1.3 – DNS Profile
 |                                 | Click Finished   |
 +---------------------------------+------------------+
 
-TASK 3 – Listeners
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Listeners
+============================
 
 Create UDP/TCP external Listeners. You will use this IP
 as a target address when querying GTM.
@@ -197,8 +197,8 @@ Create**
 |                         | Click Finished        |
 +-------------------------+-----------------------+
 
-TASK 4 – Data Centers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- Data Centers
+============================
 
 -  In the GUI, navigate to: **DNS > GSLB > Data Centers > Data > Center
    List: Create**
@@ -230,8 +230,8 @@ TASK 4 – Data Centers
       :width: 5.48936in
       :height: 1.03219in
 
-TASK 5 – Servers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+– Servers
+============================
 
 By default, GTM is not self-aware. You will need to configure your BigIP
 as a server object.
@@ -269,8 +269,8 @@ as a server object.
    | |image0|
    | What is the status of the East Data Center object now?
 
-TASK 6 – LTM HA Pairs
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+LTM HA Pairs
+============================
 
 Students will be using an LTM object to serve as the East-LTM. You will
 need to create another BigIP object to do this. Prior to configuring the
@@ -332,8 +332,8 @@ relationship.
    | > **tail -100 /var/log/gtm
      > **
 
-TASK 7 – Generic Host
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Generic Host
+============================
 
 GTM can handle virtual servers that do not reside on a BigIP. The most
 common way of incorporating non-F5 virtual server is using a Server type
@@ -360,8 +360,8 @@ of Generic Host.
       :width: 5.59245in
       :height: 1.24332in
 
-TASK 8 – Virtual Servers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Virtual Servers
+============================
 
 Finally, we need to create another virtual server on our **LTM–East**
 (10.128.1.245)
@@ -424,9 +424,7 @@ http://10.128.10.110**
 -  In the GUI, navigate to: **Statistics > Module Statistics > > DNS >
    GSLB.** Select “iQuery” from the **Statistics > Type** menu.
 
-   STOP – You have completed lab 1
-
-Exercise 2.1 – GSLB Active/Standby Data Centers
+Active/Standby Data Centers
 ===============================================
 
 -  In this use-case, you will configure a WideIP for a disaster recovery
@@ -435,8 +433,8 @@ Exercise 2.1 – GSLB Active/Standby Data Centers
 
 -  Estimated completion time: 10 minutes
 
-TASK 1 – Create a GTM Pool
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+GTM Pool
+============================
 
 -  From the GTM1 GUI, navigate to: **DNS > GSLB > Pools > Pool > List:
    Create.** Create a new Pool as shown in the table and > diagram
@@ -462,8 +460,8 @@ below. This is an ordered failover from top to bottom.
    :width: 5.50398in
    :height: 2.86964in
 
-TASK 2 – Create a WideIP
-~~~~~~~~~~~~~~~~~~~~~~~~
+WideIP
+============================
 
 We will create a hostname to use as a Wide IP.
 
@@ -537,8 +535,8 @@ We will create a hostname to use as a Wide IP.
 
 -  Query the WideIP again and note your results. Did it fail back?
 
-TASK 3 – Configure Fallback
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Fallback
+============================
 
 We will create a scenario for a fallback option when both east and west
 Virtual Servers are unavailable.
@@ -585,7 +583,7 @@ Virtual Servers are unavailable.
 
 -  Go back and re-enable your pool members.
 
-Exercise 2.2 – GSLB Active/Active Data Centers
+GSLB Active/Active Data Centers
 ==============================================
 
 -  In this use-case, you will configure a WideIP that sends clients to
@@ -594,8 +592,8 @@ Exercise 2.2 – GSLB Active/Active Data Centers
 
 -  Estimated completion time: 15 minutes
 
-TASK 1 – Create a GTM Pool
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+GTM Pool
+============================
 
 -  In the GUI on your GTM, navigate to: **DNS > GSLB > Pools > > Pool
    List: Create.** Create a new Pool as shown in the table and > diagram
@@ -615,7 +613,7 @@ TASK 1 – Create a GTM Pool
 |                              | Click Finished                          |
 +------------------------------+-----------------------------------------+
 
-TASK 2 – Create a WideIP
+WideIP
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 We will create a hostname to use as a Wide IP.
@@ -658,8 +656,8 @@ We will create a hostname to use as a Wide IP.
      distribution between members similar to the diagram below:
    | |image2|
 
-TASK 3 – Adding WideIP Alias
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+WideIP Alias
+============================
 
 GTM allows for a single WideIP configuration to be used for multiple
 names, including wildcards. We are going to add a domain name and an
@@ -688,8 +686,8 @@ example wildcard.
 
    Do you see a round robin behavior with above names as expected?
 
-TASK 4 – Adding Persistence
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Persistence
+============================
 
 Many applications require session persistence. As a result, GTM needs to
 send clients to the same Data Center via GSLB-level persistence.
@@ -730,7 +728,7 @@ send clients to the same Data Center via GSLB-level persistence.
      screen in the GUI
    | |image4|
 
-Exercise 2.3 – GSLB with Topology
+Topology
 =================================
 
 -  In this use-case, you will send clients to a preferred geographic
@@ -739,8 +737,8 @@ Exercise 2.3 – GSLB with Topology
 
 -  Estimated completion time: 10 minutes
 
-TASK 1 – Create GTM Pools
-~~~~~~~~~~~~~~~~~~~~~~~~~
+GTM Pools
+============================
 
 -  From the GTM1 GUI, navigate to: **DNS > GSLB > Pools > Pool > List:
    Create.** Create new Pools as shown in the table and > diagram below.
@@ -775,8 +773,8 @@ TASK 1 – Create GTM Pools
 |                             | Click Finished           |
 +-----------------------------+--------------------------+
 
-TASK 2 – Create Topology Records
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Topology Records
+============================
 
 We will create topology records to define source IPs that will prefer
 east or west Data Centers. We are going to have your workstation prefer
@@ -810,8 +808,8 @@ east, while LTM-east host will prefer west.
    :width: 5.74546in
    :height: 1.21225in
 
-TASK 3 – Create a WideIP
-~~~~~~~~~~~~~~~~~~~~~~~~
+WideIP
+============================
 
 We will create a hostname to use as a Wide IP for Toplogy LB.
 
@@ -872,7 +870,7 @@ Exercise 3.1 – Creating a Synchronization Group
 -  Estimated completion time: 15 minutes
 
 TASK 1 – Create Server Object on GTM1
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 -  Log in to **GTM2 (10.128.1.247)** using admin\\agility and notice >
    there is no DNS WideIPs, servers, or data centers configured
@@ -913,7 +911,7 @@ TASK 1 – Create Server Object on GTM1
     \*\*Notice gtm2-west should have turned green in the server list
 
 TASK 2 – Create a Synchronization Group
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 -  ***On GTM1*** in the GUI, navigate to: **DNS > Settings > > GSLB >
    General. **
@@ -930,7 +928,7 @@ TASK 2 – Create a Synchronization Group
       :height: 1.13924in
 
 TASK 3 – Add New GTM to Synchronization Group
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============================
 
 We will run the **gtm\_add** script to add the “new GTM” to the
 synchronization group with the “existing GTM”. Note, **always run this
